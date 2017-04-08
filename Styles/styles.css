@@ -1,0 +1,43 @@
+html body {
+	background: url(../images/white-sand.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.quote-data {
+	display: block;
+	height: 350px;
+	margin-top: 100px;	
+}
+
+#quote {
+	margin: 0 auto;
+	background-color: transparent;
+	color: #23501d;
+	padding: 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-size: 1.8em;
+	font-family: 'Calligraffitti', cursive;	
+}
+
+.btn-styles {
+	border-radius: 5%;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #1b95e0;
+	color: #23501d;	
+}
+
+#select:hover {
+	border-radius: 5%;
+	background: #1b95e0;
+	color: #fff;
+}
+
+#tweetBtn:hover {
+	border-radius: 5%;
+	background: #1b95e0;
+	color: #fff;
+}
