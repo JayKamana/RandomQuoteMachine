@@ -6,10 +6,22 @@ html body {
     background-size: cover;
 }
 
-.quote-data {
-	display: block;
-	height: 350px;
-	margin-top: 100px;	
+.quote-box {
+padding: 100px;
+margin-top: 100px;
+}
+
+@media only screen and (max-width: 900px){
+  .quote-box {
+    padding: 50px;
+    margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+  .quote-box {
+    padding: 20px;
+    }
 }
 
 #quote {
@@ -23,21 +35,40 @@ html body {
 	font-family: 'Calligraffitti', cursive;	
 }
 
-.btn-styles {
-	border-radius: 5%;
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px){
+  .buttons {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+#select-btn {
+  margin-right: 50px;
+}
+
+@media only screen and (max-width: 600px){
+  #select-btn {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.btn,
+.btn:focus,
+.btn-active {
+  border-radius: 5%;
 	background-color: rgba(0, 0, 0, 0);
 	border: 1px solid #1b95e0;
 	color: #23501d;	
 }
 
-#select:hover {
-	border-radius: 5%;
-	background: #1b95e0;
-	color: #fff;
+.btn:hover {
+  color: #fff;
+  background: linear-gradient(to bottom, #006e2e 0%,#006e2e 100%);
 }
 
-#tweetBtn:hover {
-	border-radius: 5%;
-	background: #1b95e0;
-	color: #fff;
-}
